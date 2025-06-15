@@ -1,0 +1,14 @@
+
+nav{
+    background-color: var(--main-color);
+   
+}
+.mobile-nav{
+    transition: all 1s;
+}
+.hover{
+    background-color: var(--sec-color);
+    border-radius: 10px;
+    
+    
+}
