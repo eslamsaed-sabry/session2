@@ -3,7 +3,7 @@
         <div class="logo  fs-1 fw-bold">
             <a class="text-capitalize text-white text-decoration-none" routerLink="home">Start Framework</a>
         </div>
-        <ul class="gap-3 ulList m-0 list-unstyled fs-3 fw-bold d-lg-flex link container d-none">
+        <ul class="gap-3 ulList m-0 list-unstyled fs-3 fw-bold d-lg-flex link  d-none">
             @for (link of navLinks; track link.id) {
             <li (click)="hoverLink()"> <a class="text-decoration-none text-white" routerLink={{link.Linkurl}}>{{link.LinkName}}</a> </li>
             }
