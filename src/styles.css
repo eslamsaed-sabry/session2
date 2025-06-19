@@ -3,3 +3,6 @@
     --main-color: #2C3E50;
     --sec-color : #1ABC9C;
 }
+h1{
+    color: var(--main-color);
+}

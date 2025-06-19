@@ -39,25 +39,18 @@ export class NavbarComponent {
 
   toggleMenu(): void {
     this.isOpened = !this.isOpened
-    var mobNav = document.querySelector('.mobile-nav')
     if (this.isOpened) {
-      mobNav?.classList.replace('d-none', 'd-flex')
       this.menuHeight = this.mobileNav.nativeElement.scrollHeight;
     } else {
-      mobNav?.classList.replace('d-flex', 'd-none')
       this.menuHeight = 0;
     }
   }
   closeMenu(): void {
-    var mobNav = document.querySelector('.mobile-nav')
-    mobNav?.classList.replace('d-flex', 'd-none')
     this.isOpened = false;
     this.menuHeight = 0;
+    
   }
   hoverLink(): void{
     let liHover = document.querySelector('li')
-    liHover?.classList.add("hover") 
   }
-
-
 }
